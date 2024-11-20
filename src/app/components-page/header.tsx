@@ -22,9 +22,9 @@ export default function Navbar() {
           <Link href="/components-page/skills" className="hover:text-slate-600">
             Skills
           </Link>
-          <a href="/components-page/contact" className="hover:text-slate-600">
+          <Link href="/components-page/contact" className="hover:text-slate-600">
             Contact
-          </a>
+          </Link>
         </div>
         <CiMenuBurger
           onClick={() => setIsActive(true)}
@@ -38,10 +38,10 @@ export default function Navbar() {
 
       {isActive && (
         <div className="md:hidden  flex flex-col space-y-7 mt-4 pl-5 bg-gradient-to-t bg-violet-500 from-white via-purple-700  text-slate-900">
-          <a href="/" className="hover:text-slate-600">Home</a>
-          <a href="/" className="hover:text-slate-600"> Portfolio</a>
-          <a href="/components-page/skills" className="hover:text-slate-600"> Skills</a>
-          <a href="/" className="hover:text-slate-600"> Contact</a>
+          <Link href="/" className="hover:text-slate-600">Home</Link>
+          <Link href="/components-page/projects" className="hover:text-slate-600">Projects</Link>
+          <Link href="/components-page/skills" className="hover:text-slate-600"> Skills</Link>
+          <Link href="/components-page/contact" className="hover:text-slate-600"> Contact</Link>
         </div>
       )}
     </nav>
