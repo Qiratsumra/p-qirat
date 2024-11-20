@@ -2,6 +2,9 @@ import { Button } from "@/components/ui/button"
  export default function ContactForm(){
     return(
         <>
+        <br className="md:hidden"/>
+        <br className="md:hidden"/>
+        <br className="md:hidden"/>
         <div className="flex justify-evenly max-sm:block"> 
             <div className="mt-20 ml-20 font-serif text-violet-700">
                 <h1 className="text-4xl font-bold leading-loose max-sm:text-2xl">Let's chat.
